@@ -28,8 +28,7 @@
 			<form:errors path="gestor" />
 		</div>
 		<input type="submit" value="Cadastrar" class="btn btn-primary">
-		<input type="submit" value="Cancelar" class="btn btn-secondary"
-			value="/">
+		<a class="btn btn-secondary" href="/dashboard-horas/" role="button">Voltar</a>
 	</form:form>
 
 </tags:template>
