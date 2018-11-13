@@ -36,7 +36,7 @@
 				<li class="nav-item dropdown"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
-					aria-expanded="false"> Área </a>
+					aria-expanded="false"> Area </a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<a class="dropdown-item" href="<c:url value="/area/cadastrar"/>">Cadastrar</a> 
 						<a class="dropdown-item" href="<c:url value="/area/listar"/>">Listar</a>

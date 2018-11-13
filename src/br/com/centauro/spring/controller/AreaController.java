@@ -34,7 +34,7 @@ public class AreaController {
 	@PostMapping("cadastrar")
 	public ModelAndView cadastrar(@Valid Area area, BindingResult b, RedirectAttributes r) {
 		if (b.hasErrors()) {
-			r.addFlashAttribute("msgErro", "Erro ao fazer o cadastro!");
+			r.addFlashAttribute("msgErro", "Erro ao fazer o cadastro da area!");
 			return cadastrar(area);
 		}else {
 			dao.inserir(area);
@@ -54,7 +54,7 @@ public class AreaController {
 	public String excluir(int id, RedirectAttributes redirectAttribute) {		
 		try {
 			dao.remover(id);
-			redirectAttribute.addFlashAttribute("msgSucesso", "Area excluída com sucesso!");
+			redirectAttribute.addFlashAttribute("msgSucesso", "Area excluida com sucesso!");
 		} catch (Exception e) {
 			redirectAttribute.addFlashAttribute("msgErro", "Erro ao tentar excluir essa area!");
 		}	
@@ -69,7 +69,7 @@ public class AreaController {
 			model.addObject("area",dao.pesquisar(id));
 			return model;
 		} catch (Exception e) {
-			model.addObject("msgErro", "Erro ao tentar abrir a página de edição.");
+			model.addObject("msgErro", "Erro ao tentar abrir a pagina de edicao.");
 			model = new ModelAndView("redirect:/area/listar");
 			return model;
 		}		

@@ -37,10 +37,9 @@
 	<bean id="oracleDataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="oracle.jdbc.OracleDriver" />
-<property name="url" value="jdbc:oracle:thin:@nfeprddb01.netmaster.intra:1521/wave" />
-<property name="username" value="CTE" />
-<property name="password" value="CTE" />
-
+		<property name="url" value="jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl" />
+		<property name="username" value="RM77327" />
+		<property name="password" value="140297" />
 	</bean>
 
 	<!-- Transações -->
