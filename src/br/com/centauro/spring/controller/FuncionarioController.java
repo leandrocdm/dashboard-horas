@@ -44,4 +44,16 @@ public class FuncionarioController {
 		return new ModelAndView("funcionario/listagem")
 				.addObject("funcionarios", dao.listar());
 	}
+	
+	@Transactional
+	@PostMapping("excluir")
+	public String excluir(int id, RedirectAttributes redirectAttribute) {		
+		try {
+			dao.remover(id);
+			redirectAttribute.addFlashAttribute("msgSucesso", "Funcionario excluído com sucesso!");
+		} catch (Exception e) {
+			redirectAttribute.addFlashAttribute("msgErro", "Erro ao tentar excluir o funcionario!");
+		}	
+		return "redirect:/funcionario/listar";
+	}
 }

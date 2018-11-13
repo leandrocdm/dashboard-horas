@@ -7,5 +7,4 @@ import br.com.centauro.jpa.model.Funcionario;
 
 @Repository
 public class FuncionarioDAOImpl extends GenericDAOImpl<Funcionario, Integer> implements FuncionarioDAO{
-
 }
