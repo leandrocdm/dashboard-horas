@@ -11,7 +11,6 @@ import br.com.centauro.jpa.exception.KeyNotFoundException;
 
 public class GenericDAOImpl<T,K> implements GenericDAO<T, K> {
 
-	//O framework ir� gerenciar os EntityManager (criar e destruir)
 	@PersistenceContext
 	protected EntityManager em;
 	
@@ -33,8 +32,8 @@ public class GenericDAOImpl<T,K> implements GenericDAO<T, K> {
 	}
 
 	@Override
-	public void remover(K codigo) throws KeyNotFoundException {
-		T entidade = pesquisar(codigo);
+	public void remover(K id) throws KeyNotFoundException {
+		T entidade = pesquisar(id);
 		if (entidade == null) {
 			throw new KeyNotFoundException();
 		}
@@ -42,13 +41,12 @@ public class GenericDAOImpl<T,K> implements GenericDAO<T, K> {
 	}
 
 	@Override
-	public T pesquisar(K codigo) {
-		return em.find(clazz, codigo);
+	public T pesquisar(K id) {
+		return em.find(clazz, id);
 	}
 
 	@Override
 	public List<T> listar() {
 		return em.createQuery("from "+ clazz.getName(), clazz).getResultList();
 	}
-	
 }

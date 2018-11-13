@@ -24,6 +24,8 @@ public class Funcionario {
 	@NotBlank
 	private String nome;
 
+	private String area;
+	
 	private int qtdHorasAtual;
 	
 	public Funcionario() { super();}

@@ -12,9 +12,9 @@ public interface GenericDAO<T,K> {
 	
 	void atualizar(T entidade);
 	
-	void remover(K codigo) throws KeyNotFoundException;
+	void remover(K id) throws KeyNotFoundException;
 	
-	T pesquisar(K codigo);
+	T pesquisar(K id);
 	
 }
 
