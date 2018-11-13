@@ -7,14 +7,6 @@
 <tags:template titulo="Editar Área">
 	<h1>Edição de Área</h1>
 
-	<c:if test="${not empty msgSucesso }">
-		<div class="alert alert-success">${msgSucesso }</div>
-	</c:if>
-
-	<c:if test="${not empty msgErro }">
-		<div class="alert alert-danger">${msgErro }</div>
-	</c:if>
-
 	<c:url var="link" value="/area/editar" />
 	<form:form action="${link}" method="post" commandName="area">
 		<form:hidden path="id" />
@@ -27,8 +19,7 @@
 			<form:input path="gestor" cssClass="form-control" />
 		</div>
 		<input type="submit" value="Editar" class="btn btn-primary bt-lg">
-		<input type="submit" value="Cancelar" class="btn btn-secondary bt-lg"
-			value="/area/lsitagem">
+		<a class="btn btn-secondary" href="/dashboard-horas/area/listar" role="button">Cancelar</a>
 	</form:form>
 
 </tags:template>
