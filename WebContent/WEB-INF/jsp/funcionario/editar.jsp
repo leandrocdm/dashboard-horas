@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
-<tags:template titulo="Editacao de Funcionario">
+<tags:template titulo="Editar Funcionario">
 
 	<h1>Editar Funcionario</h1>
 

@@ -4,7 +4,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
-<tags:template titulo="Listagem de Funcionarios">
+<tags:template titulo="Lista de Funcionarios">
 	<h1>Lista de Funcionarios</h1>
 
 	<c:if test="${not empty msgSucesso }">
@@ -50,7 +50,7 @@
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
-				<div class="modal-body">Deseja realmente excluir esse Funcionario?</div>
+				<div class="modal-body">Deseja realmente excluir esse funcionario?</div>
 				<div class="modal-footer">
 					<c:url value="/funcionario/excluir" var="action" />
 					<form action="${action}" method="post">

@@ -47,9 +47,8 @@
 				role="button" data-toggle="dropdown" aria-haspopup="true"
 				aria-expanded="false"> Mes/Competencia </a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="<c:url value="#"/>">Cadastrar</a> <a
-						class="dropdown-item" href="<c:url value="#"/>">Listar</a>
-
+					<a class="dropdown-item" href="<c:url value="/competencia/cadastrar"/>">Cadastrar</a> <a
+						class="dropdown-item" href="<c:url value="/competencia/listar"/>">Listar</a>
 				</div>
 			</ul>
 		</div>

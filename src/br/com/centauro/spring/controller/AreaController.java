@@ -38,7 +38,7 @@ public class AreaController {
 			return cadastrar(area);
 		}else {
 			dao.inserir(area);
-			r.addFlashAttribute("msgSucesso", area.getNome() + " cadastrada com sucesso!");
+			r.addFlashAttribute("msgSucesso", area.getNome() + " foi cadastrado com sucesso!");
 			return new ModelAndView("redirect:/area/cadastrar");
 		}
 	}
@@ -54,7 +54,7 @@ public class AreaController {
 	public String excluir(int id, RedirectAttributes redirectAttribute) {		
 		try {
 			dao.remover(id);
-			redirectAttribute.addFlashAttribute("msgSucesso", "Area excluida com sucesso!");
+			redirectAttribute.addFlashAttribute("msgSucesso", "Area foi excluida com sucesso!");
 		} catch (Exception e) {
 			redirectAttribute.addFlashAttribute("msgErro", "Erro ao tentar excluir essa area!");
 		}	
@@ -80,9 +80,9 @@ public class AreaController {
 	public String editar(Area area, RedirectAttributes redirectAttribute) {	
 		try {
 			dao.atualizar(area);
-			redirectAttribute.addFlashAttribute("msgSucesso", area.getNome() + " editada com sucesso!");
+			redirectAttribute.addFlashAttribute("msgSucesso", area.getNome() + " foi editada com sucesso!");
 		} catch (Exception e) {
-			redirectAttribute.addFlashAttribute("msgErro", "Erro ao tentar editar o Area!");
+			redirectAttribute.addFlashAttribute("msgErro", "Erro ao tentar editar a area!");
 		}	
 		return "redirect:/area/listar";
 	}	

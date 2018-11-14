@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
-<tags:template titulo="Cadastro de Funcionarios">
+<tags:template titulo="Cadastro de Funcionario">
 
 	<h1>Cadastro de Funcionario</h1>
 
@@ -31,7 +31,7 @@
 		</div>
 		
 		<div class="form-group">
-			<form:label path="qtdHorasAtual">Quantidade Hora Atual</form:label>
+			<form:label path="qtdHorasAtual">Quantidade de Banco de Hora Atual</form:label>
 			<form:input path="qtdHorasAtual" cssClass="form-control" />
 			<form:errors path="qtdHorasAtual" />
 		</div>
