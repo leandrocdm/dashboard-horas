@@ -5,7 +5,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
-<tags:template titulo="Listagem de Areas">
+<tags:template titulo="Lista de Areas">
 	<h1>Lista de Areas</h1>
 
 	<c:if test="${not empty msgSucesso }">
@@ -49,7 +49,7 @@
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
-				<div class="modal-body">Deseja realmente excluir essa Area?</div>
+				<div class="modal-body">Deseja realmente excluir essa area?</div>
 				<div class="modal-footer">
 					<c:url value="/area/excluir" var="action" />
 					<form action="${action}" method="post">

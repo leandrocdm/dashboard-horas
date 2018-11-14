@@ -42,11 +42,11 @@ public class FuncionarioController {
 	@PostMapping("cadastrar")
 	public ModelAndView cadastrar(@Valid Funcionario funcionario, BindingResult b, RedirectAttributes r) {
 		if (b.hasErrors()) {
-			r.addFlashAttribute("msgErro", "Erro ao fazer o cadastro!");
+			r.addFlashAttribute("msgErro", "Erro ao fazer o cadastro do funcionario!");
 			return cadastrar(funcionario);
 		}else {
 			funcDAO.inserir(funcionario);
-			r.addFlashAttribute("msgSucesso", funcionario.getNome() + " cadastrado com sucesso!");
+			r.addFlashAttribute("msgSucesso", funcionario.getNome() + " foi cadastrado com sucesso!");
 			return new ModelAndView("redirect:/funcionario/cadastrar");
 		}
 	}
@@ -62,7 +62,7 @@ public class FuncionarioController {
 	public String excluir(int id, RedirectAttributes redirectAttribute) {		
 		try {
 			funcDAO.remover(id);
-			redirectAttribute.addFlashAttribute("msgSucesso", "Funcionario excluido com sucesso!");
+			redirectAttribute.addFlashAttribute("msgSucesso", "Funcionario foi excluido com sucesso!");
 		} catch (Exception e) {
 			redirectAttribute.addFlashAttribute("msgErro", "Erro ao tentar excluir esse funcionario!");
 		}	
@@ -90,7 +90,7 @@ public class FuncionarioController {
 	public String editar(Funcionario funcionario, RedirectAttributes redirectAttribute) {	
 		try {
 			funcDAO.atualizar(funcionario);
-			redirectAttribute.addFlashAttribute("msgSucesso", funcionario.getNome() + " editado com sucesso!");
+			redirectAttribute.addFlashAttribute("msgSucesso", funcionario.getNome() + " foi editado com sucesso!");
 		} catch (Exception e) {
 			redirectAttribute.addFlashAttribute("msgErro", "Erro ao tentar editar o funcionario!");
 		}	

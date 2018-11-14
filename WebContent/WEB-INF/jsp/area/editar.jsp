@@ -4,7 +4,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <tags:template titulo="Editar Area">
-	<h1>Edição de Area</h1>
+	<h1>Editar Area</h1>
 
 	<c:url var="link" value="/area/editar" />
 	<form:form action="${link}" method="post" commandName="area">
