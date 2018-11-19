@@ -13,8 +13,8 @@
   		 <hr class="my-4">
   		 <p class="lead">
   
-		<p> Voce pode listar todos os funcionarios ja cadastrados:</p>
-    	<a class="btn btn-primary btn-lg" href="/dashboard-horas/funcionario/listar" role="button">Clique aqui</a>
+		<p> Voce pode listar a quantidade de horas no banco de cada funcionario:</p>
+    	<a class="btn btn-primary btn-lg" href="/dashboard-horas/bancodehoras/listagem" role="button">Clique aqui</a>
 	</div>
 	</jsp:body>
 </tags:template>
