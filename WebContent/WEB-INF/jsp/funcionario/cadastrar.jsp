@@ -31,7 +31,7 @@
 		</div>
 		
 		<div class="form-group">
-			<form:label path="qtdHorasAtual">Quantidade de Banco de Hora Atual</form:label>
+			<form:label path="qtdHorasAtual">Quantidade de Horas Atual</form:label>
 			<form:input path="qtdHorasAtual" cssClass="form-control" />
 			<form:errors path="qtdHorasAtual" />
 		</div>
