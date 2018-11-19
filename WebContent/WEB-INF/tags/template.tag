@@ -31,25 +31,24 @@
 							href="<c:url value="/funcionario/cadastrar"/>">Cadastrar</a> <a
 							class="dropdown-item" href="<c:url value="/funcionario/listar"/>">Listar</a>
 					</div>
-					
-					
 				<li class="nav-item dropdown"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false"> Area </a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="<c:url value="/area/cadastrar"/>">Cadastrar</a> 
+						<a class="dropdown-item" href="<c:url value="/area/cadastrar"/>">Cadastrar</a>
 						<a class="dropdown-item" href="<c:url value="/area/listar"/>">Listar</a>
 					</div>
-	
-			<li class="nav-item dropdown"><a
-				class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-				role="button" data-toggle="dropdown" aria-haspopup="true"
-				aria-expanded="false"> Mes/Competencia </a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="<c:url value="/competencia/cadastrar"/>">Cadastrar</a> <a
-						class="dropdown-item" href="<c:url value="/competencia/listar"/>">Listar</a>
-				</div>
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+					role="button" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false"> Mes/Competencia </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item"
+							href="<c:url value="/competencia/cadastrar"/>">Cadastrar</a> <a
+							class="dropdown-item" href="<c:url value="/competencia/listar"/>">Listar</a>
+					</div>
+				<li class="nav-item"><a class="nav-link" href="<c:url value="/bancodehoras/listagem"/>">Banco de Horas</a></li>
 			</ul>
 		</div>
 	</nav>

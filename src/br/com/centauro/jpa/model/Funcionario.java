@@ -1,11 +1,14 @@
 package br.com.centauro.jpa.model;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
@@ -35,6 +38,9 @@ public class Funcionario {
 	
 	@ManyToOne
 	private Area area;
+	
+	@OneToMany(mappedBy="funcionario")
+	private List<BancoDeHoras> bancosdehoras;
 	
 	public Funcionario() { super();}
 
@@ -84,5 +90,13 @@ public class Funcionario {
 	
 	public void setArea(Area area) {
 		this.area = area;
+	}
+
+	public List<BancoDeHoras> getBancosdehoras() {
+		return bancosdehoras;
+	}
+
+	public void setBancosdehoras(List<BancoDeHoras> bancosdehoras) {
+		this.bancosdehoras = bancosdehoras;
 	}
 }
