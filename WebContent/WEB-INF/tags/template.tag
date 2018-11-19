@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Dashboard Horas | ${titulo }</title>
+<title>${titulo }</title>
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/css/bootstrap.min.css"/>">
 </head>
@@ -48,7 +48,7 @@
 							href="<c:url value="/competencia/cadastrar"/>">Cadastrar</a> <a
 							class="dropdown-item" href="<c:url value="/competencia/listar"/>">Listar</a>
 					</div>
-				<li class="nav-item"><a class="nav-link" href="<c:url value="/bancodehoras/listagem"/>">Banco de Horas</a></li>
+				<li class="nav-item"><a class="nav-link" href="<c:url value="/bancodehoras/opcoes"/>">Banco de Horas</a></li>
 			</ul>
 		</div>
 	</nav>

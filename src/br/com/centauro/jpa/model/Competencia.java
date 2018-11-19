@@ -32,8 +32,7 @@ public class Competencia {
 	
 	@OneToMany(mappedBy="competencia")
 	private List<BancoDeHoras> bancosdehoras;
-	
-	
+		
 	public Competencia() { super(); }
 
 	public Competencia(String mes, int ano, int horasUteis) {
